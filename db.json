@@ -1,0 +1,37 @@
+{
+  "reclutas": [
+    {
+      "id": 1,
+      "nombre": "prueba",
+      "edad": "2222",
+      "telefono": "3222222222",
+      "email": "prueba@",
+      "fnacimiento": "33444",
+      "identificacion": "1111111111",
+      "fingreso": "444444",
+      "idteam": "111"
+    },
+    {
+      "id": 2,
+      "nombre": "",
+      "edad": "",
+      "telefono": "",
+      "email": "",
+      "fnacimiento": "",
+      "identificacion": "",
+      "fingreso": "",
+      "idteam": ""
+    },
+    {
+      "id": 3,
+      "nombre": "",
+      "edad": "",
+      "telefono": "",
+      "email": "",
+      "fnacimiento": "2023-05-10",
+      "identificacion": "",
+      "fingreso": "2023-04-30",
+      "idteam": ""
+    }
+  ]
+}
