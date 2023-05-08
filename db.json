@@ -24,18 +24,18 @@
     },
     {
       "id": 3,
-      "nombre": "",
+      "nombre": "nnnnnn",
       "edad": "",
       "telefono": "",
       "email": "",
-      "fnacimiento": "2023-05-10",
+      "fnacimiento": "",
       "identificacion": "",
-      "fingreso": "2023-04-30",
+      "fingreso": "",
       "idteam": ""
     },
     {
       "id": 4,
-      "nombre": "",
+      "nombre": "kkkkk",
       "edad": "",
       "telefono": "",
       "email": "",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "nombre": "",
+      "nombre": "cccccccc",
       "edad": "",
       "telefono": "",
       "email": "",
