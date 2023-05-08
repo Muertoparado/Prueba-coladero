@@ -1,0 +1,27 @@
+body{
+    background-image: url("./img/wallpaperbetter.com_1920x1080.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+.bgt{
+    background-color: rgba(83, 217, 208, 0.617);
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+.bg{
+    background-color: rgb(79, 38, 121);
+    color: white;
+}
+.bg-gradient{
+    border-radius: 20px;
+}
+img{
+    border-radius: 20px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+

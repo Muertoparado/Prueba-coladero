@@ -13,10 +13,10 @@ export default class registroRecluta extends HTMLElement{
 
     handleEvent(e){
         e.preventDefault();
-        (e.type==="submit") ? this.wsWeclutas(e) : undefined;
+        (e.type==="submit") ? this.wsReclutas(e) : undefined;
     }
 
-    wsWeclutas(e){
+    wsReclutas(e){
         let ws = new Worker("../config/wsReclutas.js", {type:"module"});
         let data = Object.fromEntries(new FormData(e.target));
         switch (e.submitter.dataset.valor){

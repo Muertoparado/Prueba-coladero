@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "nombre": "",
+      "nombre": "bbbbb",
       "edad": "",
       "telefono": "",
       "email": "",
@@ -32,6 +32,100 @@
       "identificacion": "",
       "fingreso": "2023-04-30",
       "idteam": ""
+    },
+    {
+      "id": 4,
+      "nombre": "",
+      "edad": "",
+      "telefono": "",
+      "email": "",
+      "fnacimiento": "",
+      "identificacion": "",
+      "fingreso": "",
+      "idteam": ""
+    },
+    {
+      "id": 5,
+      "nombre": "",
+      "edad": "",
+      "telefono": "",
+      "email": "",
+      "fnacimiento": "",
+      "identificacion": "",
+      "fingreso": "",
+      "idteam": ""
+    },
+    {
+      "id": 6,
+      "nombre": "prueba 2 ",
+      "edad": "2",
+      "telefono": "233333",
+      "email": "nsudnco@",
+      "fnacimiento": "",
+      "identificacion": "",
+      "fingreso": "",
+      "idteam": ""
+    },
+    {
+      "id": 7,
+      "nombre": "n3",
+      "edad": "23",
+      "telefono": "336666",
+      "email": "bfgbfb",
+      "fnacimiento": "2017-02-08",
+      "identificacion": "232323",
+      "fingreso": "2023-01-31",
+      "idteam": "3"
+    },
+    {
+      "id": 8,
+      "nombre": "sssss",
+      "edad": "24",
+      "telefono": "111111",
+      "email": "aasxsadc",
+      "fnacimiento": "2023-05-17",
+      "identificacion": "4444444",
+      "fingreso": "2023-02-06",
+      "idteam": "2"
+    },
+    {
+      "id": 9,
+      "nombre": "nombre x",
+      "edad": "30",
+      "telefono": "46557768",
+      "email": "bfgbfgbfgbfg",
+      "fnacimiento": "1992-02-08",
+      "identificacion": "88888888",
+      "fingreso": "2023-01-31",
+      "idteam": "3"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "nombret": "sputnik",
+      "trainer": "miguel"
+    },
+    {
+      "id": 2,
+      "nombre": "aaaaa",
+      "trainer": "rrrrrr"
+    },
+    {
+      "id": 3,
+      "nombre": "apolo",
+      "trainer": "asdasd"
+    },
+    {
+      "id": 4,
+      "nombre": "",
+      "trainer": ""
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "nombre": "java"
     }
   ]
 }

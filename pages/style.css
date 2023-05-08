@@ -1,0 +1,21 @@
+body{
+    background-image: url("../img/peakpx.jpg");
+    background-size: cover;
+background-attachment: fixed;
+width: 100%;
+}
+div{
+    border-radius: 20px;
+}
+.btn{
+    background-color: rgb(38, 240, 240);
+}
+img{
+    border-radius: 20px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.ppp{
+    justify-content: center;
+}
