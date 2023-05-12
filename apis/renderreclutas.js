@@ -3,7 +3,7 @@ const btnid =document.querySelector("#btnteam");
 const busteam =document.querySelector("#buscarteam");
 const renteam =document.querySelector("#renteam");
 const fedad= document.querySelector("#fedad");
-const selectrecluta = document.querySelector("#selectrecluta");
+const selectreclutas = document.querySelector("#selectreclutas");
 let puerto=4005;
 
 const buscarteam=async (id)=>{
@@ -52,8 +52,41 @@ const buscaredad = async (edad)=>{
 })();
 
  (async () => {
-   
+    const select= await fetch(`http://localhost:${puerto}/skill`);
+    const data = await select.json();
+    data.forEach(element => {
+        selectreclutas.insertAdjacentHTML("beforeend", `
+        <option value="${element.nombre}" id="${element.id}">${element.nombre}</option>
+        `)
+        
+    });
 })(); 
+selectreclutas.addEventListener("change", async ()=>{
+    const select= await fetch(`http://localhost:${puerto}/skill?_sort=name&_order=asc`);
+    const buscart = await select.json();
+     for (let i = 0; i < buscart.length; i++) { 
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.innerHTML = `
+
+    <div class="text-center" style="width: 18rem;">
+    <div class="m-3">
+        <h1>${buscart.nombre}</h1>
+        <p>Id: ${buscart.id}</p>
+        <p>Edad: ${buscart.edad}</p>
+        <p>Telefono: ${buscart.telefono}</p>
+        <p>Email: ${buscart.email}</p>
+        <p>Fecha nacimiento: ${buscart.fnacimiento}</p>
+        <p>Identificacion: ${buscart.identificacion}</p>
+        <p>Fecha ingreso: ${buscart.fingreso}</p>
+        <p>Id team: ${buscart.idteam}</p>  
+    </div>
+    </div>
+    
+    `;
+    renteam.appendChild(card);
+     }
+});
 
 btnid.addEventListener('click', async () => {
     console.log("id");

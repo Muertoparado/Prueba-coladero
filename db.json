@@ -136,19 +136,19 @@
   "skill": [
     {
       "id": 1,
-      "nombre": "zzzz"
+      "nombre": "java"
     },
     {
       "id": 2,
-      "nombre": "12w"
+      "nombre": "html"
     },
     {
       "id": 5,
-      "nombre": ""
+      "nombre": "vuej"
     },
     {
       "id": 6,
-      "nombre": "kjdkjs"
+      "nombre": "react"
     }
   ]
 }
