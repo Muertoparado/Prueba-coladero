@@ -34,17 +34,6 @@
       "idteam": ""
     },
     {
-      "id": 4,
-      "nombre": "kkkkk",
-      "edad": "",
-      "telefono": "",
-      "email": "",
-      "fnacimiento": "",
-      "identificacion": "",
-      "fingreso": "",
-      "idteam": ""
-    },
-    {
       "id": 5,
       "nombre": "cccccccc",
       "edad": "",
@@ -109,6 +98,17 @@
       "identificacion": "121212",
       "fingreso": "2023-05-16",
       "idteam": "2"
+    },
+    {
+      "id": 11,
+      "nombre": "asdfvbbb",
+      "edad": "34",
+      "telefono": "2222222",
+      "email": "csdcsdc",
+      "fnacimiento": "2023-05-01",
+      "identificacion": "",
+      "fingreso": "",
+      "idteam": ""
     }
   ],
   "teams": [
@@ -136,7 +136,19 @@
   "skill": [
     {
       "id": 1,
-      "nombre": "aaa"
+      "nombre": "zzzz"
+    },
+    {
+      "id": 2,
+      "nombre": "12w"
+    },
+    {
+      "id": 5,
+      "nombre": ""
+    },
+    {
+      "id": 6,
+      "nombre": "kjdkjs"
     }
   ]
 }

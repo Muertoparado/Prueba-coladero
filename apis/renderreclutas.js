@@ -3,6 +3,7 @@ const btnid =document.querySelector("#btnteam");
 const busteam =document.querySelector("#buscarteam");
 const renteam =document.querySelector("#renteam");
 const fedad= document.querySelector("#fedad");
+const selectrecluta = document.querySelector("#selectrecluta");
 let puerto=4005;
 
 const buscarteam=async (id)=>{
@@ -49,6 +50,10 @@ const buscaredad = async (edad)=>{
        };
    
 })();
+
+ (async () => {
+   
+})(); 
 
 btnid.addEventListener('click', async () => {
     console.log("id");
@@ -105,5 +110,7 @@ btnid.addEventListener('click', async () => {
             return reclutas.edad < 18 && reclutas.idteam === "1";
           });
     })
+
+    
 
     

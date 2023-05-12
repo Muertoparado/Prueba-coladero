@@ -24,10 +24,10 @@ export default class registroSkill extends HTMLElement{
                 ws.postMessage({type:"getSkillAll"});
                 break;
             case "posts":
-                ws.postMessage({type:" postSkill", args:data});
+                ws.postMessage({type:"postSkill", args:data});
                 break;
             case "deletes":
-                ws.postMessage({type:" deleteSkill", args:data});
+                ws.postMessage({type:"deleteSkill", args:data});
                 break;
             case "puts":
                 ws.postMessage({type:"putSkill", args:data});
