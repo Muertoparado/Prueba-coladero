@@ -1,8 +1,7 @@
 body{
     background-image: url("../img/peakpx.jpg");
     background-size: cover;
-background-attachment: fixed;
-width: 100%;
+    background-attachment: fixed;
 }
 div{
     border-radius: 20px;

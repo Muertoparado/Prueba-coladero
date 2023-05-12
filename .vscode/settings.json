@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "formato reclutas",
-        "formato teams"
+        "formato teams",
+        "formato skills"
     ]
 }

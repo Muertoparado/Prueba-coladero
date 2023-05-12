@@ -98,6 +98,17 @@
       "identificacion": "88888888",
       "fingreso": "2023-01-31",
       "idteam": "3"
+    },
+    {
+      "id": 10,
+      "nombre": "aaaaa",
+      "edad": "44",
+      "telefono": "310928939",
+      "email": "dqwdqw",
+      "fnacimiento": "2008-06-11",
+      "identificacion": "121212",
+      "fingreso": "2023-05-16",
+      "idteam": "2"
     }
   ],
   "teams": [
@@ -125,7 +136,7 @@
   "skill": [
     {
       "id": 1,
-      "nombre": "java"
+      "nombre": "aaa"
     }
   ]
 }
