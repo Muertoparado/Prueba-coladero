@@ -45,7 +45,7 @@ const putRecluta = async (arg)=>{
      let config ={
         method:"PUT",
         headers : headers,
-       body:JSON.stringify(arg)
+       /* body:JSON.stringify(arg) */
     };
     return await (await fetch(`http://localhost:${puerto}/reclutas/${arg.id}`, config)).json();
 

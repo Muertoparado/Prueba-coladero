@@ -8,7 +8,10 @@ export default class registroRecluta extends HTMLElement{
 
     constructor(){
         super();
-        this.attachShadow({mode:"open"});
+        /* this.attachShadow({mode:"open"}); */
+        /* const templateContent = template.content; */
+        this.attachShadow({mode: 'open'}).appendChild(
+            templateContent.cloneNode(true));
     }
 
     handleEvent(e){
@@ -57,6 +60,15 @@ export default class registroRecluta extends HTMLElement{
     connectedCallback(){
         Promise.resolve(registroRecluta.components()).then(html=>{
             this.shadowRoot.innerHTML=html;
+            /* prueba llamado de datos */
+
+            let tec =document.querySelector("#slot");
+            tec.addEventListener("slotchange",()=>{
+                    console.log("cambio slot ");
+
+            });
+
+            /* fin */
             this.form=this.shadowRoot.querySelector("#reclutas");
             this.form.addEventListener("submit",this.handleEvent.bind(this));
         })

@@ -117,7 +117,7 @@ btnid.addEventListener('click', async () => {
 
     });
 
-    btnedad.addEventListener('click', async ()=>{
+    btnedad.addEventListener('click', async (edad)=>{
         console.log("ad");
         const filteredData = data.filter((reclutas) => {
             for (let i = 0; i < filteredData.length; i++) {
@@ -140,7 +140,7 @@ btnid.addEventListener('click', async () => {
                `;
                fedad.appendChild(card);
                };
-            return reclutas.edad < 18 && reclutas.idteam === "1";
+            return reclutas.edad < edad && reclutas.idteam === "1";
           });
     })
 

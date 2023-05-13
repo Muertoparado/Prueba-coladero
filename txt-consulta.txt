@@ -1,0 +1,85 @@
+ara lograr lo que estás buscando, primero debes crear dos componentes de formulario separados en JavaScript utilizando Web Components. Cada uno de estos componentes de formulario debe tener un evento "submit" asociado que se encargue de enviar los datos a través de una solicitud AJAX al servidor utilizando los diferentes métodos que mencionas (GET, POST, PUT, DELETE).
+
+Una vez que tengas los dos componentes de formulario creados y funcionando correctamente, el siguiente paso es crear un tercer componente que contenga ambos formularios y se encargue de mostrar los datos de uno en el otro.
+
+Este tercer componente debe tener un select o lista desplegable que permita al usuario seleccionar cuál de los dos formularios mostrar en pantalla. Cuando el usuario seleccione un formulario en particular, el componente debe actualizar su vista para mostrar el formulario seleccionado y ocultar el otro.
+
+Para hacer esto, puedes utilizar la API de DOM en JavaScript para manipular el DOM y cambiar dinámicamente la visualización de los formularios según la selección del usuario. También puedes utilizar técnicas avanzadas como la integración de React o Vue.js para crear una interfaz más compleja y dinámica.
+
+En resumen, la solución a tu problema es crear tres componentes de formulario utilizando Web Components: dos para los formularios individuales y uno que contenga ambos formularios y se encargue de mostrar los datos de uno en el otro. Con la ayuda de JavaScript y AJAX, puedes enviar y recibir datos de tu servidor web y mostrarlos en tus formularios.
+
+class FormularioUno extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('formulario-uno');
+    const templateContent = template.content;
+    this.attachShadow({mode: 'open'}).appendChild(
+      templateContent.cloneNode(true)
+    );
+    this.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      fetch('/api/formulario-uno', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      }).then((response) => {
+        if (response.ok) {
+          alert('Datos enviados correctamente');
+        } else {
+          alert('Error al enviar datos');
+        }
+      });
+    });
+  }
+}
+
+class FormularioDos extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('formulario-dos');
+    const templateContent = template.content;
+    this.attachShadow({mode: 'open'}).appendChild(
+      templateContent.cloneNode(true)
+    );
+    this.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      fetch('/api/formulario-dos', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      }).then((response) => {
+        if (response.ok) {
+          alert('Datos enviados correctamente');
+        } else {
+          alert('Error al enviar datos');
+        }
+      });
+    });
+  }
+}
+
+
+class FormulariosContainer extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('formularios-container');
+    const templateContent = template.content;
+    this.attachShadow({mode: 'open'}).appendChild(
+      templateContent.cloneNode(true)
+    );
+    const select = this.shadowRoot.querySelector('#select-formulario');
+    select.addEventListener('change', (event) => {
+      const formularioUno = this.shadowRoot.querySelector('formulario-uno');
+      const formularioDos = this.shadowRoot.querySelector('formulario-dos');
+      if (event.target.value === 'formulario-uno') {
+        formularioUno.style.display = 'block';
+        formularioDos.style.display = 'none';
+      } else {
+        formularioUno.style.display = 'none';
+        formularioDos.style.display = 'block';
+      }
+    });
+  }
+}
